@@ -3,7 +3,7 @@ FROM node:lts-alpine
 WORKDIR /app
 
 COPY package.json package-lock.json ./
-RUN npm install
+RUN npm install --registry=https://registry.npm.taobao.org
 
 COPY public/ public/
 COPY src/ src/
