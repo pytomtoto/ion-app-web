@@ -1,4 +1,4 @@
-:9090 {
+0.0.0.0:9090 {
   root * /app/dist
   file_server
 
